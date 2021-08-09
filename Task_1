@@ -1,0 +1,5 @@
+#TASK_1 figure out the result type of expressions:
+print('for 15 * 3', type(15 * 3))
+print('for 15 / 3', type(15 / 3))
+print('for 15 // 2', type(15 // 2))
+print('for 15 ** 2', type(15 ** 2))
