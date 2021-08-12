@@ -1,0 +1,14 @@
+#Task_1/2 function "num_translate_adv()"
+def num_translate_adv(user_numb):
+   result = numb_dict.get(user_numb.lower(), 'your number is out of range')# text instead of None
+   if user_numb.istitle():
+      print(result.title())
+   else:
+      print(result)
+
+
+numb_dict = {'zero':'ноль', 'one':'один', 'two':'два', 'three':'три', 'four':'четыре', 'five':'пять',
+   'six':'шесть', 'seven':'семь', 'eigth':'восемь', 'nine':'девять', 'ten':'десять'
+}
+user_numb = input('enter a number between zero and ten: ')
+num_translate_adv(user_numb)

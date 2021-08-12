@@ -1,0 +1,16 @@
+# Task_3/4 function "theasurus()"
+def theasurus_adv(my_list):
+   my_dict = {}
+   for item in my_list:
+      name_key = item[0]
+      surname_key = item.split(' ')[1][0]
+      my_dict.setdefault(surname_key,{})
+      if name_key in my_dict[surname_key]:
+         my_dict[surname_key][name_key].append(item)
+      else:
+         my_dict[surname_key][name_key] = [item]
+   return my_dict
+
+
+my_list = ["Ayn Rand", "Kate Beckinsale", "Jane Sheppard", "April O'Neill", "Kurt Bardi", "Mike Simoni", "Raph Santi", "Judy Stern"]
+print(theasurus_adv(my_list))

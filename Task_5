@@ -1,0 +1,28 @@
+# Task_5 jokes
+from random import choice
+
+def get_jokes(num_iter, *rep):
+    """
+    :param n:
+    :param rep: optional flag to repeat words
+    :return: print jokes
+    """
+    nouns = ["автомобиль", "лес", "огонь", "город", "дом"]
+    adverbs = ["сегодня", "вчера", "завтра", "позавчера", "ночью"]
+    adjectives = ["веселый", "яркий", "зеленый", "утопичный", "мягкий"]
+    idx = 1
+    # my_str = str
+    my_list = []
+    while idx <= num_iter:
+        # if rep == 'no' and idx > 1:
+        #     nouns = list(set(nouns) - set(my_str.split(' ')))
+        #     adverbs = list(set(adverbs) - set(my_str.split(' ')))
+        #     adjectives = list(set(adjectives) - set(my_str.split(' ')))
+        my_list.append(f'{choice(nouns)} {choice(adverbs)} {choice(adjectives)}')
+        idx +=1
+    print(my_list)
+
+
+num_iter = int(input('How many jokes do you want?: '))
+# rep = input('Do you want to repeat words? (no/other): ')
+get_jokes(num_iter)
