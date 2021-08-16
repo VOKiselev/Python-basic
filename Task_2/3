@@ -1,8 +1,0 @@
-# TASK_2 TASK_3 list transformation
-my_list = ['в', '5', 'часов', '17', 'минут', 'температура', 'воздуха', 'была', '+5', 'градусов']
-for item in range(len(my_list)):
-    if my_list[item].isdigit():
-        my_list[item] = '"'+ my_list[item].zfill(2) + '"' # best speed of concatenation
-    if my_list[item][1:].isdigit():
-        my_list[item] = '"' + my_list[item].zfill(3) + '"'
-print(' '.join(my_list))
