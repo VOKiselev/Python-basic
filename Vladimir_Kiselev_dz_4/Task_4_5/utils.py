@@ -17,5 +17,4 @@ def currency_rates(curr):
 
 if __name__ == '__main__':
     currency_rates('Eur')
-    currency_rates('gbP')
     currency_rates('hkd')
